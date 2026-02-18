@@ -10,9 +10,11 @@ body {
     color: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding-top: 70px;      /* matches navbar height */
-    padding-bottom: 70px;   /* space for footer */
+    padding-top: 70px;      /* navbar height */
+    padding-bottom: 70px;   /* footer space */
 }
+
+/* ================= SECTIONS ================= */
 
 section {
     padding: 100px 10%;
@@ -127,7 +129,7 @@ button:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 999;
+    z-index: 2000;
     padding-top: 60px;
     left: 0;
     top: 0;
@@ -174,7 +176,7 @@ button:hover {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     box-shadow: 0 5px 20px rgba(255, 105, 180, 0.3);
-    z-index: 1000;
+    z-index: 3000;
 }
 
 .logo {
@@ -246,7 +248,7 @@ button:hover {
     background: linear-gradient(135deg, #ff69b4, #ff1493);
     text-align: center;
     font-size: 14px;
-    z-index: 1000;
+    z-index: 3000;
 }
 
 /* ================= HEART ANIMATION ================= */
@@ -259,11 +261,12 @@ button:hover {
     height: 100%;
     pointer-events: none;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 1;   /* LOWER than navbar */
 }
 
 .heart {
     position: absolute;
+    bottom: 0;
     font-size: 24px;
     animation: floatUp 4s linear forwards;
 }
@@ -307,6 +310,7 @@ button:hover {
         gap: 20px;
         padding: 20px 0;
         display: none;
+        z-index: 4000;   /* ABOVE everything */
     }
 
     .nav-links.active {
