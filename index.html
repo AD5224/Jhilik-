@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Jhilik 💖</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">💖 For My Forever Person Our Jhilik</div>
+
+    <ul class="nav-links">
+        <li><a href="#memories">Memories</a></li>
+        <li><a href="#special">Special</a></li>
+        <li><a href="#letter">Letter</a></li>
+       
+    </ul>
+</nav>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Landing Section -->
+    <section id="landing" class="landing">
+        <div id="landing" class="glass-box">
+            <h1>Happy Birthday, Jhilik 💫</h1>
+            <p>You + Me = Same Brain Cell Since Day One 🧠</p>
+            <button onclick="startSurprise()">Tap for Surprise 🎁</button>
+        </div>
+    </section>
+
+    <!-- Memories -->
+    <section id="memories" class="memories hidden">
+        <h2>Our Beautiful Memories 📸</h2>
+        <div class="gallery">
+            <img src="p1.jpeg">
+            <img src="p2.jpeg">
+            <img src="p3.jpeg">
+            <img src="p4.jpeg">
+            <img src="p5.jpeg">
+            <img src="p6.jpeg">
+            <img src="p7.jpeg">
+            <img src="p8.jpeg">
+                        <img src="p9.jpeg">
+                                    <img src="p10.jpeg">
+                                                <img src="p11.jpeg">
+                                                            <img src="p12.jpeg">
+                                                            <img src="p13.jpeg">
+                                                            <img src="p14.jpeg">
+        </div>
+    </section>
+
+    <!-- Special -->
+    <section id="special" class="special hidden">
+        <h2>Why You're My Favorite Human 💖</h2>
+        <div class="card-container">
+            <div class="card">Same habits, same chaos 😌</div>
+            <div class="card">Same food cravings 🍕</div>
+            <div class="card">My unpaid therapist 😇</div>
+            <div class="card">Always there for me 💖</div>
+        </div>
+    </section>
+
+    <!-- Letter -->
+    <section id="letter" class="letter hidden">
+        <h2>A Letter For You 💌</h2>
+        <p id="typeText">To the one who shares my chaos, my secrets, my happiness and my dreams… 💫
+
+From the very first day we met, something just felt right. 🤍 It didn’t take time, it didn’t need effort — you were already becoming my safe place. From Day 1 itself, you were my well-wisher, my constant support, my best friend… and honestly, like a big sister who always stood by my side no matter what. 🫶
+
+Through every laugh, every breakdown, every random mood swing and every late-night talk — you were there. 💬✨ You understood me in ways others never could. Same habits, same chaos, same brain frequency. <br>🧠💞
+
+We’ve made so many beautiful memories together — the crazy ones, the emotional ones, the unforgettable ones 📸💖 — and I know this is just the beginning. There are so many more memories waiting for us, so many more laughs, trips, inside jokes and moments that we’ll look back on and smile. 🌸
+
+No matter where life takes us, no matter how busy or different things become, I know one thing for sure — our frequency will always match. 💗 <br>
+
+Whenever you need me, I will always be there for you… <b>একবার কল লাগিয়ে তো দেখো! 🫂📞 </b> <br>
+
+You are not just my best friend. You are my comfort, my strength, my constant, my forever person. 💕 <br>
+<b> তুই শুধু বন্ধু না, তুই আমার পরিবারের মতো। 🫶</b></p>
+    </section>
+
+    <!-- Confetti -->
+    <canvas id="confetti"></canvas>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+
+
+    <section class="heart-celebration hidden">
+    <h2>Because You Deserve The Whole Sky (NOT SKY WHOLE UNIVERSE) 💫</h2>
+    <button onclick="startHeartExplosion()">Celebrate You 💖</button>
+</section>
+
+<div id="heartContainer"></div>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <p>Made with 💖 by Aadu for Jhilik © 2026 | Happy Birthday My Person 🎂</p>
+        <p></p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
