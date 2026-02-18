@@ -127,3 +127,20 @@ function createHeart() {
 
 // Create hearts continuously
 setInterval(createHeart, 300);
+
+// Close mobile menu when clicking outside
+document.addEventListener("click", function (event) {
+    const navLinks = document.querySelector(".nav-links");
+    const hamburger = document.querySelector(".hamburger");
+
+    // If click is NOT inside nav-links AND NOT on hamburger
+    if (
+        navLinks.classList.contains("active") &&
+        !navLinks.contains(event.target) &&
+        !hamburger.contains(event.target)
+    ) {
+        navLinks.classList.remove("active");
+    }
+});
+
+
