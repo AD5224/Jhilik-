@@ -102,3 +102,28 @@ function startHeartExplosion() {
         }, 4000);
     }
 }
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖"; // you can change emoji
+
+    // RANDOM horizontal position across full width
+    heart.style.left = Math.random() * 100 + "vw";
+
+    // Random size
+    heart.style.fontSize = Math.random() * 20 + 15 + "px";
+
+    document.getElementById("heartContainer").appendChild(heart);
+
+    // Remove after animation
+    setTimeout(() => {
+        heart.remove();
+    }, 4000);
+}
+
+// Create hearts continuously
+setInterval(createHeart, 300);
