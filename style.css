@@ -10,6 +10,8 @@ body {
     color: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    padding-top: 70px;      /* matches navbar height */
+    padding-bottom: 70px;   /* space for footer */
 }
 
 section {
@@ -17,7 +19,8 @@ section {
     text-align: center;
 }
 
-/* Landing */
+/* ================= LANDING ================= */
+
 .landing {
     height: 100vh;
     display: flex;
@@ -60,12 +63,11 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Hidden animation */
 .hidden {
     display: none;
 }
 
-/* ===== GALLERY ===== */
+/* ================= GALLERY ================= */
 
 .gallery {
     display: grid;
@@ -98,7 +100,8 @@ button:hover {
     transform: scale(0.95);
 }
 
-/* Cards */
+/* ================= CARDS ================= */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +122,8 @@ button:hover {
     transform: translateY(-12px);
 }
 
-/* Modal */
+/* ================= MODAL ================= */
+
 .modal {
     display: none;
     position: fixed;
@@ -156,13 +160,14 @@ button:hover {
     cursor: pointer;
 }
 
+/* ================= NAVBAR ================= */
 
-/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 15px 50px;
+    height: 70px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +180,6 @@ button:hover {
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: white;
     letter-spacing: 1px;
 }
 
@@ -212,7 +216,27 @@ button:hover {
     width: 100%;
 }
 
-/* FOOTER */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ================= LETTER ================= */
+
+.letter {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* ================= FOOTER ================= */
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -221,28 +245,11 @@ button:hover {
     padding: 15px 20px;
     background: linear-gradient(135deg, #ff69b4, #ff1493);
     text-align: center;
-    color: white;
     font-size: 14px;
     z-index: 1000;
-    
 }
 
-.footer-content p {
-    margin: 10px 0;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-body {
-    margin: 0;
-    padding-top: 80px;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding-bottom: 70px; /* space for footer */
-}
-.heart-celebration {
-    margin-top: 80px;
-}
+/* ================= HEART ANIMATION ================= */
 
 #heartContainer {
     position: fixed;
@@ -272,13 +279,57 @@ body {
     }
 }
 
-.lettter {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.15);
-    padding: 30px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 60px;
+    }
+
+    .navbar {
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.95);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .glass-box {
+        padding: 30px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
 }
